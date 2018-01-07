@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../../../../web/css/index.css">
+<head>
+    <meta charset="UTF-8">
+    <title>音悦台</title>
+    <script src="../../../../web/js/jquery-1.8.0.min.js"></script>
+    <style>
+        *{margin: 0 auto;padding: 0}
+        .maing{
+            width: 1900px;
+            height: 450px;
+            border: 0px solid white;
+            position: relative;
+        }
+        /*图片样式开始*/
+        .pic{
+            width: 1900px;
+            height: 450px;
+        }
+        .pic img{
+            position: absolute;
+            left: 0;
+            top: 0px;
+            display: none;
+        }
+        .pic img:nth-child(1)
+        {
+            display: block;
+        }
+        /*图片样式结束*/
+        /*  白色小按钮样式*/
+        .num{
+            position: absolute;
+            left: 40%;
+            top: 86%;
+        }
+        .num li{
+            width: 15px;
+            height: 15px;
+            border-radius: 100%;
+            background-color: white;
+            display: inline-block;
+            margin-left: 20px;
+        }
+        /*  白色小按钮样式*/
+    </style>
+    <script>
+        $(function () {
+            //1 参数 order 控制轮播顺序
+            var order=0;
+            // 1 图片每隔1s轮播
+            window.setInterval(lunbo,1000);
+            // 2 轮播函数
+            function lunbo()
+            {
+                if(order==5)
+                {
+                    order=0;
+                }
+                $(".pic img ").eq(order).fadeIn(500).siblings().fadeOut(500);
+                // 处理白色小圆点
+                $(".num li").eq(order).css("background-color","red").siblings().css("background-color","white");
+                order++;
+            }
+
+        })
+    </script>
+
+    <style>
+.header {
+    width: 1900px;
+    height: 40px;
+}
+        .header_left {
+            width: 800px;
+            height: 40px;
+            float:left;
+        }
+        .header_left >div
+        {
+            font-size: 14px;
+            color:black;
+            text-align: center;
+            line-height: 40px;
+        }
+        .header_right {
+            width: 700px;
+            height: 40px;
+            float: right;
+            padding-right: 40px;
+        }
+        .header_right li{
+            float: right;
+            width: 90px;
+            height: 50px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 14px;
+        }
+        /*网页头部结束*/
+        /*logo部分开始*/
+        .logo{
+            width: 1900px;
+            height: 100px;
+            background-color: white;
+        }
+        .logo_left {
+            width: 800px;
+            height: 100px;
+            float: left;
+            text-align: center;
+            line-height: 100px;
+        }
+        .logo_right {
+            width:1100px;
+            height:100px;
+            float: left;
+            text-align: center;
+            line-height: 100px;
+        }
+.logo_right input{
+    width: 400px;
+    height: 23px;
+    border: 2px solid green;
+    margin-left: 100px;
+}
+.logo_right div{
+    width: 100px;
+    height: 28px;
+    background-color: green;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 5px;
+}
+.logo_right div:hover{
+    background-color: green;
+}
+/* logo部分结束*/
+/*导航样式开始*/
+.nav {
+    width: 1900px;
+    height: 40px;
+    background-color: green;
+}
+        .nav>.subnav {
+            width: 1200px;
+            height: 40px;
+        }
+        .nav li{
+            float: left;
+            width: 125px;
+            height: 40px;
+            text-align:center;
+            line-height: 40px;
+            font-size: 18px;
+            color:white;
+        }
+        .nav li:hover{
+            background-color: aqua;
+        }
+        .nav a{
+            color: white;
+        }
+        /*导航样式结束*/
+        /*主视觉区域开始*/
+        .banner {
+            width: 1900px;
+            height: 480px;
+            background-size: cover;
+        }
+    /*主视觉区域结束*/
+        /*主要区域开始*/
+.main{
+    width: 1180px;
+    height: 1500px;
+    padding-top: 30px;
+}
+/*文字开始*/
+.word{
+    height: 30px;
+    width: 1180px;
+}
+.word table {
+    float:left;
+}
+.word td:nth-child(1){
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.word td:nth-child(2){
+    color: black;
+    font-size: 20px;
+}
+.word_left{
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.word_right{
+    float: right;
+    font-size: 15px;
+}
+.word_right li {
+    float: right;
+    width: 70px;
+}
+.word_right a{
+    color: black;
+}
+        /*文字结束*/
+        /***********种类开始**************/
+.tf{
+    padding-top: 10px;
+    width: 1180px;
+    height: auto;
+}
+.tf_left{
+    float: left;
+    width: 190px;
+    height: 300px;
+}
+.tf_left img{
+    width: 190px;
+    height: 300px;
+}
+.tf_center{
+    float: left;
+    width: 800px;
+   height: 300px;
+}
+.tf_center img{
+    width: 240px;
+    height: 135px;
+}
+.cover {
+    width: 240px;
+    height: 132px;
+    float: left;
+    background-color: rgba(1,1,1,0.3);
+   position: absolute;
+    display: none;
+    margin-top:-137px;
+}
+.abc{
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-align:center;
+    background-color: #1fff20;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+}
+.tf_center td:hover>.cover{
+    display: block;
+}
+.tf_center table{
+    width: 800px;
+    height: 300px;
+    position: relative;
+}
+.tf_right{
+    float: right;
+    width: 190px;
+    height: 300px;
+}
+.tf_right img{
+    width: 190px;
+    height: 300px;
+}
+        /************种类结束************/
+        /*主区域结束*/
+        /*宣传标语栏开始*/
+.dress{
+    overflow: hidden;
+}
+.dress>img{
+    -webkit-transition: all 2s;
+}
+.dress:hover>img{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.vixx img{
+    margin-top: 30px;
+}
+        /*宣传标语栏结束*/
+        /*1F 2F 3F开始*/
+.jackson{
+    width: 1180px;
+    height: 425px;
+    margin-top: 20px;
+}
+.jackson_left{
+    height: 425px;
+    width: 190px;
+    float: left;
+}
+.jackson_left_top{
+    width: 190px;
+    height: 90px;
+}
+.jackson_left_middle{
+    width: 190px;
+    height: 215px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.jackson_left_bottom{
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.jackson_center{
+    width: 400px;
+    height: 422px;
+    float: left;
+}
+.jackson_right{
+    width: 590px;
+    height: 422px;
+    float: right;
+}
+.word_top{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+}
+.word_bottom{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+}
+/*1F 2F 3F结束*/
+/*我们的少年时代开始*/
+.boy{
+    height: 90px;
+    width: 1180px;
+    padding-bottom: 30px;
+    float: left;
+}
+.boy_left{
+    float: left;
+    width: 641px;
+    height: 90px;
+}
+.boy_center{
+    width: 300px;
+    height: 90px;
+    font-size: 30px;
+    color: black;
+
+    text-align: center;
+    line-height: 90px;
+    float: left;
+}
+.boy_right{
+    height: 90px;
+    width: 239px;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    float: left;
+}
+.boy_right_word{
+    line-height: 30px;
+}
+/*我们的少年时代结束*/
+/*合作伙伴开始*/
+.partner{
+    width: 1180px;
+    float: left;
+}
+.partner_word{
+    height: 10px;
+    width: 1180px;
+    float: left;
+    color: black;
+    font-size: 20px;
+}
+.partner img{
+    padding: 10px;
+    margin: 10px;
+}
+.partner li{
+    float: left;
+    width: 150px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+.partner_top {
+    height: 90px;
+}
+/*合作伙伴结束*/
+/*底部开始*/
+.footer{
+    width: 100%;
+    float: left;
+    background-color: black;
+    height: 250px;
+    text-align: center;
+}
+.footer_link{
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.footer_link li{
+    float: left;
+    width: 70px;
+    height: 14px;
+    text-align: center;
+}
+.footer_link a{
+    float: left;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 14px;
+    color: white;
+}
+.footer_copy{
+    font-size: 14px;
+    color: white;
+}
+        /*底部结束*/
+    </style>
+</head>
+<body>
+<!--网页头部开始-->
+<div class="header">
+    <div class="header_left">
+        <div>嗨，欢迎来到音悦台&nbsp;&nbsp;请登录&nbsp;&nbsp;免费注册</div>
+    </div>
+    <div class="header_right">
+        <ul>
+            <li><a href="#">众筹订单</a> </li>
+            <li><a href="#">商城订单</a> </li>
+            <li><a href="#">我的悦单</a> </li>
+            <li><a href="#">我上传的</a> </li>
+            <li><a href="#">我的成长记录</a> </li>
+            <li><a href="#">个人资料</a>  </li>
+        </ul>
+    </div>
+</div>
+<!--网页头部结束-->
+<!--logo部分开始-->
+<div class="logo">
+    <div class="logo_left">
+        <img height="100" src="../../../../web/image/logo_03.jpg">
+    </div>
+    <div class="logo_right">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Toylor Switf 经典现场大回顾"/>
+                </td>
+                <td><div>搜索</div></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<!--导航样式开始-->
+<div class="nav">
+    <div class="subnav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">MV</a></li>
+            <li><a href="#">频道</a></li>
+            <li><a href="#">V榜</a></li>
+            <li><a href="#">娱乐</a></li>
+            <li><a href="#">商城</a></li>
+            <li><a href="#">众筹</a></li>
+        </ul>
+    </div>
+</div>
+<!--导航样式结束-->
+<!--——————主区域部分开始——————-->
+<!--文字开始-->
+
+<!--样式的处理-->
+<div class="maing">
+    <!-- 图片开始-->
+    <div class="pic">
+        <img width="1900px" height="450" src="../../../../web/images/img1.jpg" alt=""/>
+        <img width="1900px" height="450" src="../../../../web/images/img2.jpg" alt=""/>
+        <img width="1900px" height="450" src="../../../../web/images/img3.jpg" alt=""/>
+        <img width="1900px" height="450" src="../../../../web/images/img4.jpg" alt=""/>
+        <img width="1900px" height="450" src="../../../../web/images/img5.jpg" alt=""/>
+    </div>
+    <!-- 图片结束-->
+    <!--白色小按钮-->
+    <div class="num">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!--白色小按钮-->
+
+<div class="main">
+    <div class="word">
+        <div class="word_left">
+            <div>首播</div>
+        </div>
+        <div class="word_right">
+            <ul>
+                <li><a href="#">日韩</a></li>
+                <li><a href="#">欧美</a></li>
+                <li><a href="#">港台</a></li>
+                <li><a href="#">内地</a></li>
+                <li><a href="#">全部</a></li>
+            </ul>
+        </div>
+    </div>
+<!--文字结束-->
+    <!--种类开始-->
+    <div class="tf">
+        <div class="tf_left">
+            <img src="../../../../web/image/tf_09.jpg">
+        </div>
+        <div class="tf_center">
+            <table cellpadding="0px" cellspacing="15px" >
+                <tr>
+                    <td><a href="#"><img src="../../../../web/image/tf_11.jpg"> </a>
+                        <div class="cover ">
+                            <div class="abc">点击进入</div>
+                        </div>
+                    </td>
+                    <td><a href="#"><img src="../../../../web/image/tf_13.jpg"> </a>
+                        <div class="cover ">
+                            <div class="abc">点击进入</div>
+
+                        </div>
+                    </td>
+                    <td><a href="#"><img src="../../../../web/image/tf_15.jpg"> </a>
+                        <div class="cover ">
+                            <div class="abc">点击进入</div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="../../../../web/image/tf_23.jpg"> </a>
+                        <div class="cover ">
+                            <div class="abc">点击进入</div>
+                        </div>
+                    </td>
+                    <td><a href="#"><img src="../../../../web/image/tf_25.jpg"> </a>
+                        <div class="cover ">
+                            <div class="abc">点击进入</div>
+                        </div>
+                    </td>
+                    <td><a href="#"><img src="../../../../web/image/tf_26.jpg"> </a>
+                        <div class="cover ">
+                            <div class="abc">点击进入</div>
+                        </div>
+                    </td>
+                </tr>
+                <!--<div class="cover ">
+
+                </div>-->
+            </table>
+
+        </div>
+        <div class="tf_right">
+            <img src="../../../../web/image/tf_17.jpg">
+        </div>
+    </div>
+<!--种类结束-->
+    <!--宣传标栏开始-->
+    <div class="vixx">
+        <img src="../../../../web/image/vixx_33.jpg">
+    </div>
+<!--宣传标栏结束-->
+    <!--1F开始-->
+    <div class="jackson">
+        <div class="jackson_left">
+            <div class="jackson_left_top">
+                <img src="../../../../web/image/jackson_03.jpg" alt="gg"/>
+            </div>
+            <div class="jackson_left_middle">
+                <img src="../../../../web/image/jackson_16.jpg" alt=""/>
+            </div>
+            <div class="jackson_left_bottom>">
+                <div align="center" > <br>青春遗言 <br>  <span>《会痛的十八岁》</span> <br> 2017.9.15</div>
+            </div>
+        </div>
+
+        <div class="jackson_center">
+            <img src="../../../../web/image/jackson_05.jpg" alt=""/>
+        </div>
+        <div class="jackson_right">
+            <table cellpadding="0" cellspacing="8">
+                <tr>
+                    <td>
+                        <div class="word_top">现在你是怎样的人</div>
+                        <div class="word_bottom">张栋梁</div >
+                        <img src="../../../../web/image/jackson_08.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">第三类接触</div>
+                        <div class="word_bottom">潘玮柏</div >
+                        <img src="../../../../web/image/jackson_10.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">Bad girls need love too</div>
+                        <div class="word_bottom">艾菲&李斯丹妮</div >
+                        <img src="../../../../web/image/jackson_12.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../../../../web/image/jackson_22.jpg"></td>
+                    <td><img src="../../../../web/image/jackson_24.jpg"></td>
+                    <td><img src="../../../../web/image/jackson_21.jpg"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+<!--1F结束-->
+    <!--2F开始-->
+    <div class="jackson">
+        <div class="jackson_left">
+            <div class="jackson_left_top">
+                <img src="../../../../web/image/taylorswift_31.jpg">
+            </div>
+            <div class="jackson_left_middle">
+                <img src="../../../../web/image/taylorswift_39.jpg">
+            </div>
+            <div class="jackson_left_bottom>">
+                <div align="center" > <br>Taylor swift <br> REPUTATION <br></div>
+            </div>
+        </div>
+
+        <div class="jackson_center">
+            <img src="../../../../web/image/taylorswift_32.jpg">
+        </div>
+        <div class="jackson_right">
+            <table cellpadding="0" cellspacing="8">
+                <tr>
+                    <td>
+                        <div class="word_top">WHAT ABOUT US</div>
+                        <div class="word_bottom">PINK</div>
+                        <img src="../../../../web/image/taylorswift_33.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">VERSACE ON THE FLOOR</div>
+                        <div class="word_bottom">Bruno Mars</div>
+                        <img src="../../../../web/image/taylorswift_34.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">QUESTIONS</div>
+                        <div class="word_bottom">Chris Brown</div>
+                        <img src="../../../../web/image/taylorswift_35.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../../../../web/image/taylorswift_46.jpg"></td>
+                    <td><img src="../../../../web/image/taylorswift_48.jpg"></td>
+                    <td><img src="../../../../web/image/taylorswift_44.jpg"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--2F结束-->
+    <!--3F开始-->
+    <div class="jackson ">
+        <div class="jackson_left">
+            <div class="jackson_left_top">
+                <img src="../../../../web/image/henry_85.jpg ">
+            </div>
+            <div class="jackson_left_middle">
+                <img src="../../../../web/image/henry_95.jpg">
+            </div>
+            <div class="jackson_left_bottom>">
+                <div align="center" > <br>Henry <br> That One <br></div>
+            </div>
+        </div>
+
+        <div class="jackson_center">
+            <img src="../../../../web/image/henry_87.jpg">
+        </div>
+        <div class="jackson_right">
+            <table cellpadding="0" cellspacing="8">
+                <tr>
+                    <td>
+                        <div class="word_top">COME BACK</div>
+                        <div class="word_bottom">水晶男孩</div>
+                        <img src="../../../../web/image/henry_89.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">COME BACK HOME</div>
+                        <div class="word_bottom">BTS</div>
+                        <img src="../../../../web/image/henry_90.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">5MTM6</div>
+                        <div class="word_bottom">Hangzoo</div>
+                        <img src="../../../../web/image/henry_92.jpg ">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../../../../web/image/henry_101.jpg"></td>
+                    <td><img src="../../../../web/image/henry_102.jpg"></td>
+                    <td><img src="../../../../web/image/henry_104.jpg"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <!--3F结束-->
+    <!--我们的少年时代开始 -->
+    <div class="boy">
+        <div class="boy_left">
+            <img src="../../../../web/image/boy-hood_112.jpg">
+        </div>
+        <div class="boy_center">
+            <div>我们的少年时代</div>
+        </div>
+        <div class="boy_right">
+            <div class="boy_right_word"><br>梦想全垒打</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;青春正当时</div>
+        </div>
+    </div>
+    <!--我们的少年时代结束-->
+    <!--合作伙伴开始-->
+    <div class="partner">
+        <div class="partner_word">
+            &nbsp;&nbsp;&nbsp;&nbsp;合作伙伴
+        </div>
+        <div class="partner_top" >
+            <img src="../../../../web/image/partner_115.gif">
+        </div>
+        <div class="panter_bottom">
+            <img src="../../../../web/image/partner_116.gif">
+        </div>
+        <div class="partner_word">
+            &nbsp;&nbsp;&nbsp;&nbsp;网络合作伙伴
+        </div>
+        <br>
+        <div>
+            <ul>
+                <li>
+                    <img src="../../../../web/image/partner_119.gif">
+                </li>
+                <li><img src="../../../../web/image/partner_121.gif"></li>
+                <li><img src="../../../../web/image/partner_123.gif"></li>
+                <li><img src="../../../../web/image/partner_125.gif"></li>
+                <li><img src="../../../../web/image/partner_127.gif"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--合作伙伴结束-->
+<div class="footer" align="center;">
+    <div class="footer_link">
+        <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">人才招聘</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">版权声明</a></li>
+            <li><a href="#">客服中心</a></li>
+        </ul>
+    </div>
+    <div class="footer_copy">
+        <a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/4028c08b5414482e015417e9da8803e3" target="_blank"><img src="http://s.yytcdn.com/v2/images/topbar/culture.png" style="vertical-align: top;width:25px;height:25px;margin-right:3px;"></a>
+        广播电视节目制作经营 &nbsp;许可证编号(京)字第1891号 &nbsp;&nbsp;| &nbsp;&nbsp;京网文[2014]2037-287号 &nbsp;&nbsp;| &nbsp;&nbsp;网络视听许可证0110413号<br>
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502014900" target="_blank"><img src="http://s.yytcdn.com/v2/images/topbar/ghs.png">
+            京公网安备11010502014900号</a>&nbsp;&nbsp;| &nbsp;&nbsp;京ICP备11024134号-1 &nbsp;&nbsp;| &nbsp;&nbsp;京ICP证060716号 &nbsp;&nbsp;|&nbsp;&nbsp; 出版物经营许可证 &nbsp;&nbsp;| &nbsp;&nbsp;新出发京批字第直160022号 &nbsp;&nbsp;| &nbsp;&nbsp;增值电信业务经营许可证B2-20140501
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+*{ margin: 0 auto; padding: 0}
+
+li{list-style: none}
+
+a{text-decoration: none}
+
+
+.header{
+    height: 40px;
+    background-color: #F2F2F2;
+}
+.header_left{
+    width: 400px;
+    height: 40px;
+    float: left;
+}
+
+.header_left div {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+.header_right {
+    width:850px;
+    height:40px;
+    float: right;
+    padding-right: 50px;
+    position: absolute;
+}
+.header_right li{
+    float: right;
+    width: 80px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+.header_right li:nth-child(2){
+    width: 110px;
+}
+.header_right a{
+    color: black;
+}
+
+/*---logo---*/
+
+.logo{
+    width: 1300px;
+    height: 100px;
+    background-color: white;
+}
+.logo_left{
+    width: 500px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+}
+.logo_right{
+    width:800px;
+    height: 100px;
+    float: right;
+    text-align: center;
+    line-height: 100px;
+}
+.logo_right input{
+    width: 400px;
+    height: 24px;
+    border: 2px solid red;
+    margin-left: 100px;
+}
+.logo_right div{
+    width: 80px;
+    height: 28px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+    margin-top: 4px;
+}
+.logo_right div:hover{
+    background-color: darkred;
+}
+
+
+.nav{
+    height: 40px;
+    background-color: rgb(120,162,20);
+}
+.nav .subnav{
+    width: 800px;
+    height: 40px;
+}
+.nav li{
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: white;
+}
+.nav li:hover{
+    background-color: black;
+}
+.nav a{
+    color:white;
+}
+
+
+.banner{
+
+}
+.banner_radio{
+    position: absolute;
+    top: 625px;
+    left: 50%;
+    margin-left: -40px;
+
+}
+.banner_radio li{
+    cursor: pointer;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: dimgray;
+    float: left;
+    margin-left: 5px;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+
+}
+.banner_radio li:hover{
+    background-color: antiquewhite;
+    color: #000;
+}
+
+
+
+.main{
+    width: 1180px;
+    height: 1500px;
+    padding-top: 30px;
+}
+.word{
+    height: 30px;
+    width: 1180px;
+}
+/*.word table {
+    float:left;
+}
+.word td:nth-child(1){
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.word td:nth-child(2){
+    color: lightgrey;
+    font-family:"Times New Roman";
+    font-style: oblique;
+    font-size: 20px;
+} */
+.word_left{
+    float: left;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.word_right{
+    float: right;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.word_right li {
+    float: right;
+    width: 50px;
+}
+.word_right a{
+    color: lightgrey;
+}
+
+.tf{
+
+    padding-top: 10px;
+    width: 1180px;
+    height: auto;
+}
+.tf_left{
+    float: left;
+    width: 190px;
+    height: 300px;
+}
+.tf_left img{
+    width: 190px;
+    height: 300px;
+}
+.tf_center{
+    float: left;
+    width: 800px;
+    height: 300px;
+}
+.tf_center img{
+    width: 240px;
+    height: 135px;
+}
+
+.tf_center table{
+
+}
+.tf_right{
+    float: right;
+    width: 190px;
+    height: 300px;
+}
+.tf_right img{
+    width: 190px;
+    height: 300px;
+}
+
+
+.vixx{
+
+}
+
+.vixx img{
+    margin-top: 30px;
+}
+
+.jackson{
+    width: 1180px;
+    height: 425px;
+    margin-top: 20px;
+}
+.jackson_left{
+    height: 425px;
+    width: 190px;
+    float: left;
+}
+.jackson_left_top{
+    width: 190px;
+    height: 90px;
+}
+.jackson_left_middle{
+    width: 190px;
+    height: 215px;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.jackson_left_bottom{
+    font-size: 14px;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.jackson_center{
+    width: 400px;
+    height: 422px;
+    float: left;
+}
+.jackson_right{
+    width: 590px;
+    height: 422px;
+    float: right;
+}
+.word_top{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    line-height: 30px;
+}
+.word_bottom{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+}
+
+
+
+.boy{
+    height: 90px;
+    width: 1180px;
+    background-color: rgb(251,252,254);
+    padding-bottom: 30px;
+}
+.boy_left{
+    float: left;
+    width: 641px;
+    height: 90px;
+}
+.boy_center{
+    width: 300px;
+    height: 90px;
+    font-size: 30px;
+    color: black;
+
+    text-align: center;
+    line-height: 90px;
+    float: left;
+}
+.boy_right{
+    height: 90px;
+    width: 239px;
+    font-size: 20px;
+    color: black;
+
+    text-align: center;
+    float: left;
+}
+.boy_right_word{
+    line-height: 30px;
+}
+
+
+.partner{
+    height: 330px;
+    width: 1180px;
+    float: left;
+
+}
+.partner div{
+    margin: 0px;
+    padding: 0px;
+}
+.partner_word{
+    height: 30px;
+    width: 1180px;
+    float: left;
+    color: black;
+    font-size: 20px;
+}
+.partner_top{
+    height: 120px;
+}
+.partner_bottom{
+    height: 90px;
+}
+.partner img{
+    padding: 0px;
+    margin: 0px;
+    border: 0;
+}
+.partner li{
+    float: left;
+    width: 150px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+
+.footer{
+    width: 100%;
+    float: left;
+    background-color: black;
+    height: 250px;
+    text-align: center;
+}
+.footer_link{
+    height: 70px;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.footer_link li{
+    float: left;
+    width: 70px;
+    height: 14px;
+    text-align: center;
+}
+.footer_link a{
+    float: left;
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 14px;
+    color: white;
+}
+.footer_copy{
+    font-size: 14px;
+    color: white;
+}
+
+.dress{
+    overflow: hidden;
+}
+.dress img{
+    -webkit-transition: all 2s;
+}
+.dress:hover img{
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}

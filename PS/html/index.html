@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="../css/index.css">
+
+<head>
+    <script src="../script/jquery-3.2.1.min.js"></script>
+    <meta charset="UTF-8">
+    <title>音悦台</title>
+    <script>
+        var timeInterval=5000;
+        setInterval(order,timeInterval);
+        var arr=new Array();
+        arr[0]="../image/banner_06.jpg";
+        arr[1]="../image/banner_08.jpg";
+        arr[3]="../image/banner_10.jpg";
+        arr[2]="../image/banner_08.jpg";
+        arr[4]="../image/banner_06.jpg";
+        var i=0;
+        function order() {
+            if (i<5){
+                document.getElementById("banner").src=arr[i];
+                document.getElementById("banner").src=arr[i];
+            }
+            else {
+                i=i-5;
+                document.getElementById("banner").src=arr[i];
+            }
+            i++;
+        }
+
+        function showA() {
+            document.getElementById("banner").src="../image/banner_06.jpg";
+        }
+        function showB() {
+            document.getElementById("banner").src="../image/banner_08.jpg";
+        }
+        function showC() {
+            document.getElementById("banner").src="../image/banner_10.jpg";
+        }
+        function showD() {
+            document.getElementById("banner").src="../image/banner_12.jpg";
+        }
+        function showE() {
+            document.getElementById("banner").src="../image/banner_14.jpg";
+        }
+    </script>
+</head>
+
+<body onload="order()">
+<div class="header">
+    <div class="header_left">
+        <div>嗨，欢迎来到音悦台&nbsp;&nbsp;请登陆&nbsp;&nbsp;免费注册</div>
+    </div>
+    <div class="header_right">
+        <ul>
+            <li><a href="#">个人资料</a> </li>
+            <li><a href="#">我的成长记录</a> </li>
+            <li><a href="#">我上传的</a> </li>
+            <li><a href="#">我的悦单</a> </li>
+            <li><a href="#">商城订单<img src="../image/menu_icon05.png"></a> </li>
+        </ul>
+    </div>
+</div>
+<div class="logo">
+    <div class="logo_left">
+        <img height="100" src="../image/logo_03.jpg">
+    </div>
+    <div class="logo_right">
+        <table cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                    <input type="text" placeholder="Toylor Switf 经典现场大回顾"/>
+                </td>
+                <td><div>搜索</div></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="nav">
+    <div class="subnav">
+        <ul>
+            <li onmouseenter="showA()"><a href="#">首页</a></li>
+            <li onmouseenter="showB()"><a href="#">MV</a></li>
+            <li onmouseenter="showC()"><a href="#">频道</a></li>
+            <li onmouseenter="showD()"><a href="#">V榜</a></li>
+            <li onmouseenter="showE()"><a href="#">娱乐</a></li>
+            <li><a href="#">商城</a></li>
+            <li><a href="#">众筹</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="banner">
+    <img id="banner" src="../image/banner_06.jpg">
+    <div class="banner_radio">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+    </div>
+</div>
+
+<div class="main">
+    <div class="word">
+        <div class="word_left">
+            <div>首播</div>
+        </div>
+        <div class="word_right">
+            <ul>
+                <li><a href="#">全部</a></li>
+                <li><a href="#">内地</a></li>
+                <li><a href="#">港台</a></li>
+                <li><a href="#">欧美</a></li>
+                <li><a href="#">日韩</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="tf">
+        <div class="tf_left">
+            <img src="../image/tf_09.jpg">
+        </div>
+        <div class="tf_center">
+            <table cellpadding="0px" cellspacing="15px" >
+                <tr>
+                    <td><a href="#"><img src="../image/tf_11.jpg"> </a> </td>
+                    <td><a href="#"><img src="../image/tf_13.jpg"> </a> </td>
+                    <td><a href="#"><img src="../image/tf_15.jpg"> </a> </td>
+                </tr>
+                <tr>
+                    <td><a href="#"><img src="../image/tf_23.jpg"> </a> </td>
+                    <td><a href="#"><img src="../image/tf_25.jpg"> </a> </td>
+                    <td><a href="#"><img src="../image/tf_26.jpg"> </a> </td>
+                </tr>
+            </table>
+        </div>
+        <div class="tf_right">
+            <img src="../image/tf_17.jpg">
+        </div>
+    </div>
+
+    <div class="vixx">
+        <img src="../image/vixx_33.jpg">
+    </div>
+
+    <div class="jackson">
+        <div class="jackson_left">
+            <div class="jackson_left_top">
+                <img src="../image/jackson_03.jpg">
+            </div>
+            <div class="jackson_left_middle">
+                <img src="../image/jackson_16.jpg">
+            </div>
+            <div class="jackson_left_bottom>">
+                <div align="center" > <br>青春遗言 <br>  <span>《会痛的十八岁》</span> <br> 2017.9.15</div>
+            </div>
+        </div>
+
+        <div class="jackson_center">
+            <img src="../image/jackson_05.jpg">
+        </div>
+        <div class="jackson_right">
+            <table cellpadding="0" cellspacing="8">
+                <tr>
+                    <td>
+                        <div class="word_top">现在你是怎样的人</div>
+                        <div class="word_bottom">张栋梁</div >
+                        <img src="../image/jackson_08.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">第三类接触</div>
+                        <div class="word_bottom">潘玮柏</div >
+                        <img src="../image/jackson_10.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">Bad girls need love too</div>
+                        <div class="word_bottom">艾菲&李斯丹妮</div >
+                        <img src="../image/jackson_12.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../image/jackson_21.jpg"></td>
+                    <td><img src="../image/jackson_22.jpg"></td>
+                    <td><img src="../image/jackson_24.jpg"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+<!--     TS     -->
+    <div class="jackson">
+        <div class="jackson_left">
+            <div class="jackson_left_top">
+                <img src="../image/taylorswift_31.jpg">
+            </div>
+            <div class="jackson_left_middle">
+                <img src="../image/taylorswift_39.jpg">
+            </div>
+            <div class="jackson_left_bottom>">
+                <div align="center" > <br>Taylor swift <br> REPUTATION <br></div>
+            </div>
+        </div>
+
+        <div class="jackson_center">
+            <img src="../image/taylorswift_32.jpg">
+        </div>
+        <div class="jackson_right">
+            <table cellpadding="0" cellspacing="8">
+                <tr>
+                    <td>
+                        <div class="word_top">WHAT ABOUT US</div>
+                        <div class="word_bottom">PINK</div>
+                        <div class="dress"><img src="../image/taylorswift_33.jpg"></div>
+                    </td>
+                    <td>
+                        <div class="word_top">VERSACE ON THE FLOOR</div>
+                        <div class="word_bottom">Bruno Mars</div>
+                        <img src="../image/taylorswift_34.jpg">
+                    </td>
+                    <td>
+                        <div class="word_top">QUESTIONS</div>
+                        <div class="word_bottom">Chris Brown</div>
+                        <img src="../image/taylorswift_35.jpg">
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="../image/taylorswift_44.jpg"></td>
+                    <td><img src="../image/taylorswift_46.jpg"></td>
+                    <td><img src="../image/taylorswift_48.jpg"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <hr><br>
+
+    <!--          -->
+
+    <!--          -->
+    <div class="boy">
+        <div class="boy_left">
+            <img src="../image/boy-hood_112.jpg">
+        </div>
+        <div class="boy_center">
+            <div>我们的少年时代</div>
+        </div>
+        <div class="boy_right">
+            <div class="boy_right_word"><br>梦想全垒打</div><div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;青春正当时</div>
+        </div>
+    </div>
+    <div class="partner">
+        <div class="partner_word">
+            &nbsp;&nbsp;&nbsp;&nbsp;合作伙伴
+        </div>
+        <div class="partner_top">
+            <img src="../image/partner_115.gif">
+        </div>
+        <div class="partner_bottom">
+            <img src="../image/partner_116.gif">
+        </div>
+        <div class="partner_word">
+            &nbsp;&nbsp;&nbsp;&nbsp;网络合作伙伴
+        </div>
+        <br>
+        <div>
+            <ul>
+                <li>
+                    <img src="../image/partner_119.gif">
+                </li>
+                <li><img src="../image/partner_121.gif"></li>
+                <li><img src="../image/partner_123.gif"></li>
+                <li><img src="../image/partner_125.gif"></li>
+                <li><img src="../image/partner_127.gif"></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer" align="center">
+    <div class="footer_link">
+        <ul>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">人才招聘</a></li>
+            <li><a href="#">联系我们</a></li>
+            <li><a href="#">友情链接</a></li>
+            <li><a href="#">版权声明</a></li>
+            <li><a href="#">客服中心</a></li>
+        </ul>
+    </div>
+    <div class="footer_copy">
+        <a href="http://sq.ccm.gov.cn:80/ccnt/sczr/service/business/emark/toDetail/4028c08b5414482e015417e9da8803e3" target="_blank"><img src="http://s.yytcdn.com/v2/images/topbar/culture.png" style="vertical-align: top;width:25px;height:25px;margin-right:3px;"></a>
+        广播电视节目制作经营 &nbsp;许可证编号(京)字第1891号 &nbsp;&nbsp;| &nbsp;&nbsp;京网文[2014]2037-287号 &nbsp;&nbsp;| &nbsp;&nbsp;网络视听许可证0110413号<br>
+        <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502014900" target="_blank"><img src="http://s.yytcdn.com/v2/images/topbar/ghs.png">
+            京公网安备11010502014900号</a>&nbsp;&nbsp;| &nbsp;&nbsp;京ICP备11024134号-1 &nbsp;&nbsp;| &nbsp;&nbsp;京ICP证060716号 &nbsp;&nbsp;|&nbsp;&nbsp; 出版物经营许可证 &nbsp;&nbsp;| &nbsp;&nbsp;新出发京批字第直160022号 &nbsp;&nbsp;| &nbsp;&nbsp;增值电信业务经营许可证B2-20140501
+    </div>
+</div>
+
+
+</body>
+</html>
